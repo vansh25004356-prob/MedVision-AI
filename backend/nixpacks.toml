@@ -1,9 +1,6 @@
 [phases.setup]
 nixPkgs = [
-  "glib",
+  "mesa",
   "libGL",
-  "xorg.libX11",
-  "xorg.libXext",
-  "xorg.libSM",
-  "xorg.libXrender"
+  "glib"
 ]
