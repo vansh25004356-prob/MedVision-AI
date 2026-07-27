@@ -25,7 +25,7 @@ PROJECT_ROOT = BACKEND_DIR.parent
 # ==========================================================
 
 MODEL_PATH = (
-    PROJECT_ROOT
+    BACKEND_DIR
     / "models"
     / "YOLO11_RSNA_v1"
     / "weights"
