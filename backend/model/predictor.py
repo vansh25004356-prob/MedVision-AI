@@ -14,7 +14,7 @@ Responsibilities:
 import uuid
 import time
 
-import cv2
+from PIL import Image
 
 from model.loader import get_model
 from config import (
@@ -149,7 +149,7 @@ class Predictor:
 
         output_path = PREDICTION_FOLDER / output_name
 
-        cv2.imwrite(str(output_path), annotated)
+        Image.fromarray(annotated).save(output_path)
 
         end = time.time()
 
